@@ -7,43 +7,75 @@
   <meta name="author" content="Enzo Foz Brockmeyer">
   <meta name="description" content="Portfolio and autobiography of Enzo Foz Brockmeyer">
   
-  <style>
-    
+  <style type="text/css">
+    /* Tag Selectors */
     body {
-      background-image: url("images/bg.png"); 
       background-color: #cacacc;
+      background-image: url("images/bg.png");
       color: #333;
       font-family: 'Times New Roman', Times, serif;
-      margin: 20px;
+      margin: 0;
+      width: 100%; /* Centers the page when combined with margin:auto on wrapper */
     }
-    
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
+
     header {
-      height: 50px; 
-      background-image: url("images/"); /* i am keeping this here incase i want a header image */
       background-color: #cacacc;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      position: relative;
+      border-bottom: 1px solid #aaa;
       padding: 20px;
+      text-align: center;
     }
+
     nav a {
-      margin-right: 15px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      color: white;
+      color: #333;
+    }
+
+    /* ID Selectors */
+    #wrapper {
+      background-color: white;
+      max-width: 1000px;
+      margin: 20px auto; /* Centers the container on the screen */
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    #social {
+      text-align: center;
+      margin-top: 50px;
+      border-top: 1px solid #333;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* Class Selectors */
+    .highlight {
+      color: #63007e;
+      font-weight: bold;
+    }
+
+    .center-text {
+      text-align: center;
     }
 
     
-    .container {
-      background-color: white;
-      max-width: 1350px;       /* Keeps the text from getting too wide */
-      margin: -50px auto 50px; /* Pulls it up over the banner slightly and centers it */
-      padding: 40px;
-      border-radius: 0px;   
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
-      position: fixed;    
-    }
   </style>
 </head>
 
@@ -57,38 +89,41 @@
     <a href="#work">My Work</a>
   </nav>
 </header>
-<div class="container">
-<main>
-  <section id="bio">
-    <h1 style="text-align:center">About EFB</h1>
-    <p>I am Enzo Foz Brockmeyer. I am training to be a <b>jack of all trades</b>. So far, I've begun my journey from a young age in artistic hobbies: drawing, painting, crafting, etc.</p>
-    
-    <p>I am also adamant about <span style="color:#63007e; font-weight:bold;">physical movement</span>; I am a fan of trying all sports, training methods, and whatever else you can think of.</p>
-    
-    <p style="font-size:20px"><i>How about my professional portfolio?</i></p>
-  </section>
 
-  <hr style="width:100%; border:5px solid #fcfaff; border-radius: 0%;">
+<div id="wrapper" class="container"> <main>
+    <section id="bio">
+      <h1>About EFB</h1>
+      <p>I am Enzo Foz Brockmeyer. I am training to be a <b>jack of all trades</b>. So far, I've begun my journey from a young age in artistic hobbies: drawing, painting, crafting, etc.</p>
+      
+      <p>I am also adamant about <span class="highlight">physical movement</span>; I am a fan of trying all sports, training methods, and whatever else you can think of.</p>
+      
+      <p style="font-size:20px"><i>How about my professional portfolio?</i></p>
+    </section>
 
-  <section id="work">
-    <h1 style="text-align:center">My Work</h1>
-    
-    <p style="text-align:center;">
-      <a href="https://lastbestplace.store/" target="_blank">
-        <img src="images/logo.png" alt="Last Best Place Logo" style="width:150px; border:2px;">
-      </a>
-      <br>
-      <strong>Last Best Place Store</strong>
-    </p>
+    <hr style="width:100%; border:5px solid #fcfaff;">
 
-    <p>A website for a clothing brand that my dad and I created. It pays homage to the state where my dad and I were born, <strong><em>Montana.</em></strong></p>
+    <section id="work" class="center-text">
+      <svg width="180" height="60" style="margin-bottom: 20px;">
+        <rect x="5" y="5" width="170" height="50" rx="10" 
+              style="fill:rgb(193, 193, 247); stroke:rgb(0, 0, 0); stroke-width:3; opacity:0.5" />
+        <text x="50%" y="55%" font-size="24" font-weight="bold" font-family="Times" 
+              fill="black" text-anchor="middle" dominant-baseline="middle">
+          MY WORK
+        </text>
+      </svg>
 
+      <p>
+        <a href="https://lastbestplace.store/" target="_blank">
+          <img src="images/logo.png" alt="Last Best Place Logo" style="width:150px;">
+        </a>
+        <br>
+        <strong>Last Best Place Store</strong>
+      </p>
 
-  </section>
-</main>
-</div>
-
-<footer style="margin-top: 50px; border-top: 1px solid #333; padding-top: 10px;">
+      <p>A website for a clothing brand that my dad and I created. It pays homage to the state where my dad and I were born, <strong><em>Montana.</em></strong></p>
+    </section>
+  </main>
+</div> <footer id="social">
   Contact Me:
   <a href="mailto:enzo.brockmeyer@gmail.com">enzo.brockmeyer@gmail.com</a>
   | 

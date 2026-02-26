@@ -3,107 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EFB | Portfolio</title>
-  <meta name="author" content="Enzo Foz Brockmeyer">
-  <meta name="description" content="Portfolio and autobiography of Enzo Foz Brockmeyer">
+  <title>EFB | Portfolio & Bio</title>
+  <meta name="author" content="Enzo Foz-Brockmeyer">
+  <meta name="description" content="Official portfolio and biography of Enzo Foz-Brockmeyer, highlighting creative projects and professional background.">
   
-  <style type="text/css">
-    /* Tag Selectors */
-    body {
-      background-color: #cacacc;
-      background-image: url("images/bg.png");
-      color: #333;
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-      width: 100%; /* Centers the page when combined with margin:auto on wrapper */
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 0;
-    }
-
-    header {
-      background-color: #cacacc;
-      border-bottom: 1px solid #aaa;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-    }
-
-    /* ID Selectors */
-    #wrapper {
-      background-color: white;
-      max-width: 1000px;
-      margin: 20px auto; /* Centers the container on the screen */
-      padding: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    #social {
-      text-align: center;
-      margin-top: 50px;
-      border-top: 1px solid #333;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    /* Class Selectors */
-    .highlight {
-      color: #63007e;
-      font-weight: bold;
-    }
-
-    .center-text {
-      text-align: center;
-    }
-
-    
-  </style>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
+<div id="wrapper">
 <header>
   <nav>
-    <a href="index.htm">EFB</a>
-    <a href="resume.htm">My Resume</a>
-    <a href="#bio">Bio</a>
-    <a href="#work">My Work</a>
+    <ul>
+      <li><a href="index.htm" class="selected">Home</a></li>
+      <li><a href="resume.htm" target="_self">Resume</a></li>
+      <li><a href="#work" target="_self">Portfolio</a></li>
+      <li><a href="mailto:enzo.brockmeyer@gmail.com" target="_self">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<div id="wrapper" class="container"> <main>
+  <main>
     <section id="bio">
-      <h1>About EFB</h1>
-      <p>I am Enzo Foz Brockmeyer. I am training to be a <b>jack of all trades</b>. So far, I've begun my journey from a young age in artistic hobbies: drawing, painting, crafting, etc.</p>
+      <h1 class="center-text">About EFB</h1>
+      <p>I am Enzo Foz-Brockmeyer. I am training to be a <span class="highlight">jack of all trades</span>. So far, I've begun my journey from a young age in artistic hobbies: drawing, painting, and crafting.</p>
       
-      <p>I am also adamant about <span class="highlight">physical movement</span>; I am a fan of trying all sports, training methods, and whatever else you can think of.</p>
+      <p>I am also adamant about physical movement; I am a fan of trying all sports, training methods, and whatever else you can think of.</p>
       
-      <p style="font-size:20px"><i>How about my professional portfolio?</i></p>
+      <p style="font-size:20px; text-align: center;"><i>How about my professional portfolio?</i></p>
     </section>
 
-    <hr style="width:100%; border:5px solid #fcfaff;">
+    <hr style="width:100%; border:1px solid #ddd; margin: 20px 0;">
 
     <section id="work" class="center-text">
-      <svg width="180" height="60" style="margin-bottom: 20px;">
+       <svg width="180" height="60" style="margin-bottom: 20px;">
         <rect x="5" y="5" width="170" height="50" rx="10" 
               style="fill:rgb(193, 193, 247); stroke:rgb(0, 0, 0); stroke-width:3; opacity:0.5" />
         <text x="50%" y="55%" font-size="24" font-weight="bold" font-family="Times" 
@@ -120,15 +53,14 @@
         <strong>Last Best Place Store</strong>
       </p>
 
-      <p>A website for a clothing brand that my dad and I created. It pays homage to the state where my dad and I were born, <strong><em>Montana.</em></strong></p>
+      <p>A website for a clothing brand that pays homage to <strong><em>Montana.</em></strong></p>
     </section>
   </main>
-</div> <footer id="social">
-  Contact Me:
-  <a href="mailto:enzo.brockmeyer@gmail.com">enzo.brockmeyer@gmail.com</a>
-  | 
-  <a href="tel:18885550000">(888) 555-0000</a>
-</footer>
 
+
+<footer id="social">
+  <p>&copy; 2026 Enzo Foz-Brockmeyer | <a href="mailto:enzo.brockmeyer@gmail.com">Email Me</a></p>
+</footer>
+</div>
 </body>
 </html>

@@ -1,27 +1,62 @@
-
-/* Apply box-sizing to all elements for easier layout management  */
+/* 1. Global Reset & Base Styles */
 * {
   box-sizing: border-box;
 }
-img {max-width: 100%; height: auto; display: block;}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 body {
   background-color: #cacacc;
   background-image: url("images/bg.png");
-
   color: #333;
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
-  /* Centers the page wrapper on the monitor  */
 }
 
-/* Header & Navigation  */
+/* 2. Primary Page Wrapper */
+#wrapper {
+  background-color: white;
+  max-width: 1000px;
+  margin: 20px auto; 
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  /* Flexbox removed from here to allow Header/Footer to stack naturally */
+}
+
+/* 3. Structural Grouping (The Fix) */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+aside {
+  flex: 0 0 25%; /* Fixed sidebar width */
+  text-align: right;
+  padding: 14px;
+  border-right: 1px solid #ddd;
+}
+
+section {
+  flex: 1; /* Fills remaining 75% */
+  padding: 14px;
+}
+
+/* 4. Header & Responsive Navigation (Mobile First) */
 header {
-  background-color: #cacacc;
   border-bottom: 1px solid #aaa;
   padding: 20px;
   text-align: center;
   font-size: xx-large;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
 }
 
 nav ul {
@@ -29,65 +64,66 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  display: inline;
-  padding: 0 14px;
-}
-
-/* Nav Effect 1: Unselected  */
+/* Mobile State: Vertical Block */
 nav a {
+  display: block;
+  width: 80%;
+  margin: 5px auto;
   text-decoration: none;
   font-weight: bold;
   color: #333;
-  padding: 5px 10px;
+  padding: 6px;
+  border: 2px #AAA solid;
 }
 
-/* Nav Effect 2: Hover  */
 nav a:hover {
   color: white;
   background-color: #63007e;
   border-radius: 4px;
 }
 
-/* Nav Effect 3: Selected  */
 .selected {
   color: #63007e;
   border-bottom: 2px solid #63007e;
 }
 
-/* 2-Column Layout Structure  */
-#wrapper {
-  background-color: white;
-  max-width: 1000px;
-  margin: 20px auto; 
-  padding: 20px;
-  overflow: auto; /* Clears floats */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+/* 5. Desktop/PC Navigation (Media Query) */
+@media only screen and (min-width: 640px) {
+  nav a {
+    display: inline;
+    border: none;
+    padding: 5px 10px;
+  }
+  
+  nav li {
+    display: inline;
+    padding: 0 18px;
+  }
 }
 
-aside {
-  width: 25%;
-  float: left;
-  text-align: right;
-  padding: 14px;
-  border-right: 1px solid #ddd;
+/* 6. Responsive Two-Column Layout (Mobile Fix) */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; 
+  }
+  
+  aside, section {
+    flex: 0 0 100%;
+    text-align: center; 
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
 }
 
-section {
-  width: 75%;
-  float: left;
-  padding: 14px;
-}
-
-/* Typography & Content */
+/* 7. Typography & Footer */
 h1, h2 { color: #333; }
 h2 { border-bottom: 1px solid #63007e; padding-bottom: 5px; }
 .highlight { color: #63007e; font-weight: bold; }
+.center-text { text-align: center; }
 
 footer {
   text-align: center;
   margin-top: 50px;
   border-top: 1px solid #333;
   padding: 20px;
-  clear: both;
 }

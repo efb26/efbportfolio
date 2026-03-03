@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio for Enzo Foz-Brockmeyer</title>
+  <meta name="author" content="Enzo Foz-Brockmeyer">
+  <meta name="description" content="Professional Portfolio of Enzo Foz-Brockmeyer, featuring creations of hobbies.">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="resume.htm">Resume</a></li>
+        <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+        <li><a href="transcript.html">Transcript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flex-container">
+      <section id="work" class="center-text">
+
+        <!-- Section heading SVG -->
+        <svg viewBox="0 0 180 60" preserveAspectRatio="xMidYMid meet"
+          style="max-width: 180px; width: 100%; height: auto; margin-bottom: 20px;"
+          aria-labelledby="workTitle">
+          <title id="workTitle">My Work Section</title>
+          <rect x="5" y="5" width="170" height="50" rx="10"
+            style="fill:rgb(99, 0, 126); stroke:rgb(0, 0, 0); stroke-width:3; opacity:0.5" />
+          <text x="50%" y="55%" font-size="24" font-weight="bold" font-family="Times"
+            fill="black" text-anchor="middle" dominant-baseline="middle">
+            MY WORK
+          </text>
+        </svg>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid">
+
+          <!-- Card 1: Last Best Place (Web / UI) -->
+          <div class="portfolio-card">
+            <figure>
+              <img src="images/logo.png" alt="Last Best Place Logo">
+              <figcaption>
+                <span class="portfolio-tag">Web / UI</span>
+                <h3>Last Best Place Store</h3>
+                <p>A website for a clothing brand that pays homage to <em>Montana.</em></p>
+                <a href="https://lastbestplace.store/" target="_blank">View Project →</a>
+              </figcaption>
+            </figure>
+          </div>
+
+
+          <div class="portfolio-card">
+            <figure>
+              <img src="images/koz.jpg" alt="Koz logo">
+              <figcaption>
+                <span class="portfolio-tag">Web / UI</span>
+                <h3>KOZ(metology)</h3>
+                <p>A work in progress cosmetology website</p>
+                <a href="#">View Project →</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Add more cards by copying a .portfolio-card block above -->
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enzo Foz-Brockmeyer. All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>

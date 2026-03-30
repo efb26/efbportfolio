@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EFB | Contact</title>
+  <meta name="author" content="Enzo Foz-Brockmeyer">
+  <meta name="description" content="Contact Enzo Foz-Brockmeyer via the contact form on this page.">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper"> <!-- open wrapper -->
+
+  <nav>
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="resume.htm">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="transcript.html">Transcript</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="contact.htm" class="selected">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="contact-section">
+
+      <table>
+
+        <!-- Row 1: Table Header spanning both columns -->
+        <tr>
+          <th colspan="2">Contact Enzo Foz-Brockmeyer</th>
+        </tr> <!-- close row 1 -->
+
+        <!-- Row 2: First Name -->
+        <tr>
+          <td style="text-align:right"><span class="required">*</span> First Name</td>
+          <td><input type="text" name="firstname" placeholder="First Name" required></td>
+        </tr> <!-- close row 2 -->
+
+        <!-- Row 3: Last Name -->
+        <tr>
+          <td style="text-align:right"><span class="required">*</span> Last Name</td>
+          <td><input type="text" name="lastname" placeholder="Last Name" required></td>
+        </tr> <!-- close row 3 -->
+
+        <!-- Row 4: City -->
+        <tr>
+          <td style="text-align:right">City</td>
+          <td><input type="text" name="city" placeholder="City"></td>
+        </tr> <!-- close row 4 -->
+
+        <!-- Row 5: State -->
+        <tr>
+          <td style="text-align:right">ST</td>
+          <td>
+            <select name="state">
+              <option value="FL" selected>Florida</option>
+              <option value="AL">Alabama</option>
+              <option value="CA">California</option>
+              <option value="NY">New York</option>
+              <option value="TX">Texas</option>
+            </select>
+          </td>
+        </tr> <!-- close row 5 -->
+
+        <!-- Row 6: Zip -->
+        <tr>
+          <td style="text-align:right">Zip</td>
+          <td><input type="text" name="zip" placeholder="Zip Code"></td>
+        </tr> <!-- close row 6 -->
+
+        <!-- Row 7: Email -->
+        <tr>
+          <td style="text-align:right"><span class="required">*</span> Email</td>
+          <td><input type="email" name="email" placeholder="email@example.com" required></td>
+        </tr> <!-- close row 7 -->
+
+        <!-- Row 8: Gender -->
+        <tr>
+          <td style="text-align:right">Gender</td>
+          <td>
+            <label><input type="radio" name="gender" value="M"> M</label>
+            &nbsp;
+            <label><input type="radio" name="gender" value="F"> F</label>
+          </td>
+        </tr> <!-- close row 8 -->
+
+        <!-- Row 9: Education -->
+        <tr>
+          <td style="text-align:right">Education</td>
+          <td>
+            <label><input type="checkbox" name="edu" value="AS"> AS</label>
+            &nbsp;
+            <label><input type="checkbox" name="edu" value="BS"> BS</label>
+          </td>
+        </tr> <!-- close row 9 -->
+
+        <!-- Row 10: Comments -->
+        <tr>
+          <td style="text-align:right">Comments</td>
+          <td><textarea name="comments" rows="4" cols="30" placeholder="Your message here..."></textarea></td>
+        </tr> <!-- close row 10 -->
+
+        <!-- Row 11: Submit -->
+        <tr>
+          <td colspan="2" style="text-align:center">
+            <input type="submit" value="Send Message">
+            <input type="reset" value="Clear Form">
+          </td>
+        </tr> <!-- close row 11 -->
+
+      </table>
+
+      <p class="required-note"><span class="required">*</span> Required fields</p>
+
+    </section>
+  </main>
+
+  <footer id="social">
+    <p>
+      <span style="color:purple; font-weight:bold; font-size:1.3em;">&copy;</span>
+      2026 Enzo Foz-Brockmeyer |
+      <span style="color:purple; font-weight:bold; font-size:1.3em;">&amp;</span>
+      <a href="index.htm">Back to Home</a>
+    </p>
+  </footer>
+
+</div> <!-- close wrapper -->
+</body>
+</html>

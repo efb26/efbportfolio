@@ -58,49 +58,42 @@ header {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #63007e;
   width: 100%;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-nav a {
+nav ul li a {
   display: block;
-  width: 80%;
-  margin: 5px auto;
+  padding: 14px 18px;
+  color: #f0e6f4;
   text-decoration: none;
   font-weight: bold;
-  color: #333;
-  padding: 6px;
-  border: 2px #AAA solid;
+  font-size: 0.95em;
+  letter-spacing: 0.04em;
+  transition: background 0.2s, color 0.2s;
 }
 
-nav a:hover {
-  color: white;
-  background-color: #63007e;
-  border-radius: 4px;
+nav ul li a:hover {
+  background-color: #4a0080;
+  color: #ffffff;
 }
 
 .selected {
-  color: #63007e;
-  border-bottom: 2px solid #63007e;
-}
-
-/* 5. Desktop Navigation */
-@media only screen and (min-width: 640px) {
-  nav a {
-    display: inline;
-    border: none;
-    padding: 5px 10px;
-  }
-
-  nav li {
-    display: inline;
-    padding: 0 18px;
-  }
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 
 /* 6. Responsive Two-Column Layout */
